@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11   CMakeFiles/main.dir/channel.cpp.o CMakeFiles/main.dir/currentThread.cpp.o CMakeFiles/main.dir/eventLoop.cpp.o CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/poller.cpp.o CMakeFiles/main.dir/thread.cpp.o CMakeFiles/main.dir/timestamp.cpp.o  -o main  -lpthread 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cplusplus/httpServer/minimuduo/00
+CMAKE_SOURCE_DIR = /home/cplusplus/httpServer/minimuduo/01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cplusplus/httpServer/minimuduo/00/build
+CMAKE_BINARY_DIR = /home/cplusplus/httpServer/minimuduo/01/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cplusplus/httpServer/minimuduo/00/build/CMakeFiles /home/cplusplus/httpServer/minimuduo/00/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cplusplus/httpServer/minimuduo/01/build/CMakeFiles /home/cplusplus/httpServer/minimuduo/01/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cplusplus/httpServer/minimuduo/00/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cplusplus/httpServer/minimuduo/01/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+channel.o: channel.cpp.o
+
+.PHONY : channel.o
+
+# target to build an object file
+channel.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/channel.cpp.o
+.PHONY : channel.cpp.o
+
+channel.i: channel.cpp.i
+
+.PHONY : channel.i
+
+# target to preprocess a source file
+channel.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/channel.cpp.i
+.PHONY : channel.cpp.i
+
+channel.s: channel.cpp.s
+
+.PHONY : channel.s
+
+# target to generate assembly for a file
+channel.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/channel.cpp.s
+.PHONY : channel.cpp.s
 
 currentThread.o: currentThread.cpp.o
 
@@ -204,6 +231,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+poller.o: poller.cpp.o
+
+.PHONY : poller.o
+
+# target to build an object file
+poller.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/poller.cpp.o
+.PHONY : poller.cpp.o
+
+poller.i: poller.cpp.i
+
+.PHONY : poller.i
+
+# target to preprocess a source file
+poller.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/poller.cpp.i
+.PHONY : poller.cpp.i
+
+poller.s: poller.cpp.s
+
+.PHONY : poller.s
+
+# target to generate assembly for a file
+poller.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/poller.cpp.s
+.PHONY : poller.cpp.s
+
 thread.o: thread.cpp.o
 
 .PHONY : thread.o
@@ -231,6 +285,33 @@ thread.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/thread.cpp.s
 .PHONY : thread.cpp.s
 
+timestamp.o: timestamp.cpp.o
+
+.PHONY : timestamp.o
+
+# target to build an object file
+timestamp.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/timestamp.cpp.o
+.PHONY : timestamp.cpp.o
+
+timestamp.i: timestamp.cpp.i
+
+.PHONY : timestamp.i
+
+# target to preprocess a source file
+timestamp.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/timestamp.cpp.i
+.PHONY : timestamp.cpp.i
+
+timestamp.s: timestamp.cpp.s
+
+.PHONY : timestamp.s
+
+# target to generate assembly for a file
+timestamp.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/timestamp.cpp.s
+.PHONY : timestamp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... channel.o"
+	@echo "... channel.i"
+	@echo "... channel.s"
 	@echo "... currentThread.o"
 	@echo "... currentThread.i"
 	@echo "... currentThread.s"
@@ -249,9 +333,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... poller.o"
+	@echo "... poller.i"
+	@echo "... poller.s"
 	@echo "... thread.o"
 	@echo "... thread.i"
 	@echo "... thread.s"
+	@echo "... timestamp.o"
+	@echo "... timestamp.i"
+	@echo "... timestamp.s"
 .PHONY : help
 
 
