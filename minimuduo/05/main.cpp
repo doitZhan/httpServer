@@ -13,7 +13,7 @@ void onConnection(const TcpConnectionPtr& conn){
         printf("onConnection(): new connection [%s] from %s\n", conn->name().c_str(), conn->peerAddress().toIpPort().c_str());
     }
     else{
-        printf("on connection(): conenction [%s] is down\n", conn->name().c_str());
+        printf("onConnection(): conenction [%s] is down\n", conn->name().c_str());
     }
 }
 

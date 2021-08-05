@@ -63,9 +63,9 @@ void TcpConnection::connectEstablished(){
 
 void TcpConnection::connectDestroyed(){
     loop_->assertInLoopThread();
-    assert(state_ == KConnected);
-    setState(KDisconnected);
-    channel_->disableAll();
+    assert(state_ == KDisconnected);
+    //setState(KDisconnected);
+    //channel_->disableAll();
     connectionCallback_(shared_from_this());
 
     loop_->removeChannel(get_pointer(channel_));

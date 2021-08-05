@@ -23,4 +23,7 @@
 
 * version04: <br>
     添加Acceptor、InetAddress、Socket、SocketsOps、StringPiece类。
-    Acceptor：在EventLoop的loop循环中注册监听套接字事件，通过handleread处理新的连接。
+    Acceptor：在EventLoop的loop循环中注册监听套接字事件，通过handleRead处理新的连接。
+
+* version05: <br>
+    添加TcpConnection和TcpServer类。
