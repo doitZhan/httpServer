@@ -1,0 +1,8 @@
+/home/cplusplus/httpServer/version/build/CMakeFiles/rebuild_cache.dir
+/home/cplusplus/httpServer/version/build/CMakeFiles/edit_cache.dir
+/home/cplusplus/httpServer/version/build/net/CMakeFiles/edit_cache.dir
+/home/cplusplus/httpServer/version/build/net/CMakeFiles/rebuild_cache.dir
+/home/cplusplus/httpServer/version/build/net/CMakeFiles/libNet.dir
+/home/cplusplus/httpServer/version/build/app/http/CMakeFiles/rebuild_cache.dir
+/home/cplusplus/httpServer/version/build/app/http/CMakeFiles/edit_cache.dir
+/home/cplusplus/httpServer/version/build/app/http/CMakeFiles/httpServer.dir

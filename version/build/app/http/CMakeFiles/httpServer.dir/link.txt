@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11   CMakeFiles/httpServer.dir/HttpContext.cpp.o CMakeFiles/httpServer.dir/HttpResponse.cpp.o CMakeFiles/httpServer.dir/HttpServer.cpp.o CMakeFiles/httpServer.dir/HttpServer_test.cpp.o  -o httpServer  ../../net/liblibNet.a -lpthread 
